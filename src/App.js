@@ -28,7 +28,7 @@ class App extends Component {
     if (manifest) {
       return (
         <section>
-          <MediaElementContainer manifest={manifest} />
+          <MediaElementContainer manifest={manifest} poster={this.props.poster} />
           <StructuredNav manifest={manifest} />
         </section>
       );

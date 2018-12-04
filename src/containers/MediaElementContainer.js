@@ -60,7 +60,7 @@ class MediaElementContainer extends Component {
           controls
           width={manifest.width || 480}
           height={manifest.height || 360}
-          poster=""
+          poster={poster}
           sources={JSON.stringify(sources)}
           options={JSON.stringify(options)}
         />
@@ -73,7 +73,8 @@ class MediaElementContainer extends Component {
 }
 
 MediaElementContainer.propTypes = {
-  manifest: PropTypes.object
+  manifest: PropTypes.object,
+    poster: PropTypes.string
 };
 
 export default MediaElementContainer;
